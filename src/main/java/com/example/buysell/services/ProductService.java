@@ -77,7 +77,8 @@ public class ProductService {
             }
         } else {
             log.error("Product with id = {} is not found", id);
-        }    }
+        }
+    }
 
     public Product getProductById(Long id) {
         return productRepository.findById(id).orElse(null);
